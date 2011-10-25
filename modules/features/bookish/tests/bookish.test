@@ -1,4 +1,8 @@
 <?php
+/**
+  * @file 
+  * This is a file used to test the Bookish module
+*/
 require_once drupal_get_path('module', 'bookish_test') . '/bookish_web_test_case.php';
 
 class BookishTest extends BookishWebTestCase {

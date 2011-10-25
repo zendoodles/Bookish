@@ -209,7 +209,7 @@ function bookish_reactivate_submit($form, &$form_state) {
   $node = node_load($nid);
   $node->status = 1;
   node_save($node);
-  drupal_set_message(t('The @type @title has been reactivated.', array('@type' => node_get_types('name', $node->type), '@title' => $node->title)));
+  drupal_set_message(t('The @type @title has been reactivated.', array('@type' => node_type_get_name($node->type), '@title' => $node->title)));
   if (og_is_group_type($node->type)) {
     purl_goto('<front>', array('purl' => array('provider' => 'spaces_og', 'id' => $nid)));
   }

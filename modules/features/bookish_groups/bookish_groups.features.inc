@@ -23,7 +23,7 @@ function bookish_groups_node_info() {
   $items = array(
     'group' => array(
       'name' => t('Group'),
-      'module' => 'features',
+      'base' => 'features',
       'description' => t('A group space for members to coordinate, collaborate and share ideas.'),
       'has_title' => '1',
       'title_label' => t('Title'),
